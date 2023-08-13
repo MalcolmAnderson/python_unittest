@@ -11,6 +11,8 @@ class Encryption_Test(unittest.TestCase):
     def test_input_should_be_string(self):
         self.assertIsInstance(self.my_message, str)
 
+    def test_cipher_should_return_something(self):
+        self.assertIsNotNone(self.cypher("encode", "a", 1))
 
 if __name__ == "__main__":
     unittest.main()

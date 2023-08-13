@@ -1,4 +1,5 @@
 import unittest
+import caesar_cipher as cipher
 
 
 class Encryption_Test(unittest.TestCase):
@@ -12,7 +13,7 @@ class Encryption_Test(unittest.TestCase):
         self.assertIsInstance(self.my_message, str)
 
     def test_cipher_should_return_something(self):
-        self.assertIsNotNone(self.cypher("encode", "a", 1))
+        self.assertIsNotNone(cipher.cipher("encode", "a", 1))
 
 if __name__ == "__main__":
     unittest.main()
